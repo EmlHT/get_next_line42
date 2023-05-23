@@ -1,0 +1,10 @@
+	if (alloc_number())
+	{
+		if (write(2, "MEMORY LEAK DETECTED\n", strlen("MEMORY LEAK DETECTED\n")) < 0)$
+		{
+			write(2, "FAILED TO WRITE\n", strlen("FAILED TO WRITE\n"));$
+		}
+		return (3);
+	}
+	return (0);
+}
